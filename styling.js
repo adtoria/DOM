@@ -1,12 +1,6 @@
-const title = document.querySelector('h1');
+const content = document.querySelector('p');
 
-// title.setAttribute('style', 'margin: 50px;');
-// overwrites what was previously there
-
-console.log(title.style);
-console.log(title.style.color);
-
-title.style.margin = '50px';
-title.style.color = 'crimson';
-title.style.fontSize = '60px';
-title.style.margin = ''; // to remove a property
+console.log(content.classList);
+content.classList.add('error');
+content.classList.remove('error');
+content.classList.add('success');
